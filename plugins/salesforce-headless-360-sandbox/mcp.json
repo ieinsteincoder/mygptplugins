@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "salesforce-headless-360-sandbox": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote@latest",
+        "https://api.salesforce.com/platform/mcp/v1/sandbox/platform/headless-360",
+        "8181",
+        "--host",
+        "localhost",
+        "--static-oauth-client-info",
+        "{\"client_id\":\"\u0024{SALESFORCE_CLIENT_ID}\",\"client_secret\":\"\u0024{SALESFORCE_CLIENT_SECRET}\"}",
+        "--static-oauth-client-metadata",
+        "{\"redirect_uris\":[\"http://localhost:8181/oauth/callback\"],\"token_endpoint_auth_method\":\"client_secret_post\",\"grant_types\":[\"authorization_code\",\"refresh_token\"],\"response_types\":[\"code\"],\"scope\":\"mcp_api refresh_token\"}"
+      ]
+    }
+  }
+}
