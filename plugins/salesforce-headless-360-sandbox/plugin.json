@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "salesforce-headless-360-sandbox",
+  "version": "0.1.0",
+  "description": "Connect to Salesforce Hosted MCP Server through the local mcp-remote OAuth bridge.",
+  "author": {"name": "ieinsteincoder"},
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Salesforce Headless 360 Sandbox",
+        "shortDescription": "Connect Salesforce MCP",
+        "longDescription": "Connect to Salesforce Hosted MCP Server through the local mcp-remote bridge. OAuth is handled by the bridge against the Salesforce HTTPS MCP endpoint.",
+        "developerName": "ieinsteincoder",
+        "category": "Productivity",
+        "capabilities": ["Interactive"],
+        "defaultPrompt": "Use the connected Salesforce Hosted MCP tools to help me work with Salesforce data and actions."
+      }
+    }
+  }
+}
