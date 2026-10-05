@@ -1,0 +1,14 @@
+{
+  "name": "salesforce-headless-360-sandbox",
+  "version": "0.1.0",
+  "description": "Connect to Salesforce Hosted MCP Server through the local mcp-remote OAuth bridge.",
+  "author": {"name": "ieinsteincoder"},
+  "repository": "https://github.com/ieinsteincoder/mygptplugins",
+  "license": "MIT",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Salesforce Headless 360 Sandbox",
+    "shortDescription": "Connect Salesforce MCP"
+  }
+}
