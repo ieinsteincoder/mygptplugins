@@ -1,0 +1,22 @@
+{
+  "name": "mygptplugins",
+  "interface": {
+    "displayName": "My GPT Plugins"
+  },
+  "plugins": [
+    {
+      "name": "salesforce-headless-360-sandbox",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ieinsteincoder/mygptplugins",
+        "path": "./plugins/salesforce-headless-360-sandbox",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
